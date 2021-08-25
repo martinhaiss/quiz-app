@@ -1,3 +1,10 @@
-h1 {
-    font-family: 'Monoton', cursive;
-  }
+header {
+  background-color:whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+    font-family: 'Monoton', cursive; 
+    font-size: 3rem;
+}
