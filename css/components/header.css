@@ -1,8 +1,9 @@
 header {
-  background-color:whitesmoke;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: -10px;
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: 1;
+  justify-content:center;
 }
 .title {
     font-family: 'Monoton', cursive; 
