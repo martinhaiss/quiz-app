@@ -1,0 +1,49 @@
+.account__profile {
+  background: white;
+  color: black;
+  border: 1px solid silver;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.account__image {
+  background: chartreuse;
+  align-self: center;
+  width: 50%;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+.account__name {
+  background: coral;
+  align-self: center;
+}
+.account__about {
+  background: cyan;
+  align-self: flex-start;
+}
+.account__about-title {
+  background: deeppink;
+  align-self: flex-start;
+}
+.account__about_text {
+  background: gold;
+  align-self: center;
+}
+.account__skills {
+  background: greenyellow;
+  align-self: center;
+}
+.account__skills_tags {
+  background: turquoise;
+  align-self: space-around;
+}
+.account__button {
+    background: tomato;
+  align-self:flex-start;
+}
+.account__botton_logout {
+    align-self: flex-end;
+}
