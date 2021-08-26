@@ -1,15 +1,55 @@
-.create__area {
-    margin-left: 20px;
-    margin-top: 10px;
-    padding: 10px;
-    max-width: 100%;
-    line-height: 1.5;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 1px #999;
+.card-create {
+  display:block;
 }
 
-.create__button {
-    margin-left: 50%;
-    margin-top: 10px;
+label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  margin-left: 20px;
+  font-size: 1.3em;
+  padding: 5px 12px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  color: black;
+  border: 1px solid silver;
+  background-image: linear-gradient(to top, gainsboro 0%, white 90%);
+  border-radius: 5px;
+}
+
+.create__area {
+  position: ;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  position: ;
+  margin: 20px;
+  resize: none;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  color: black;
+  border: 1px solid silver;
+  background-image: linear-gradient(to top, white 90%);
+  border-radius: 10px;
+}
+
+button {
+  margin-left: 30%;
+  margin-top: 5px;
+  font-size: 1.3em;
+  padding: 5px 12px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  color: black;
+  border: 1px solid silver;
+  background-image: linear-gradient(to top, gainsboro 0%, white 90%);
+  border-radius: 10px;
 }

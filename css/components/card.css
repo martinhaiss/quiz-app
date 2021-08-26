@@ -1,31 +1,31 @@
-h2 { 
-    font-family: 'Roboto', sans-serif;
-    text-align: center !important;
-  }
+h2 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center !important;
+}
 
 .card {
-      font-family: 'Roboto', sans-serif;
-      font-weight: 800;
-      height: 450px;
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: repeat(6, 1fr);
-      position: relative;
-      background-color: white; 
-      border-color:darkgrey;
-      border-width: 1px;
-      border-style: solid;
-      border-bottom-left-radius: 2px;
-      border-bottom-right-radius: 2px;
-      border-radius: 10px;      
-  }
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  height: 450px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  position: relative;
+  background-color: white;
+  border-color: darkgrey;
+  border-width: 1px;
+  border-style: solid;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-radius: 10px;
+}
 
 .card__question {
   text-align: justify;
   grid-column-start: 1;
   grid-column-end: -1;
   grid-row-start: 1;
-  grid-row-end: 2;  
+  grid-row-end: 2;
   padding: 10px;
 }
 
@@ -44,25 +44,24 @@ h2 {
   right: 11px;
   padding: 10px;
   border-width: 1px;
-      border-style: solid;
-      border-bottom-left-radius: 2px;
-      border-bottom-right-radius: 2px;
-      border-radius: 5px;
+  border-style: solid;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-radius: 5px;
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 2;
 }
 
-.tags { 
-
+.tags {
   list-style-type: none;
   position: absolute;
   bottom: 10px;
   left: 10px;
-  padding-left: 10px; 
+  padding-left: 10px;
 
-/*
+  /*
     display: flex;
     justify-content : space-around;
     list-style-type: none;
@@ -74,19 +73,18 @@ h2 {
 }
 
 .tags__item {
-
   border: solid;
-  border-color:darkgrey;
-      border-width: 1px;
-      border-style: solid;
-      border-bottom-left-radius: 2px;
-      border-bottom-right-radius: 2px;
-      border-radius: 5px;
-  padding-left: 5px;   
+  border-color: darkgrey;
+  border-width: 1px;
+  border-style: solid;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-radius: 5px;
+  padding-left: 5px;
   padding-right: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 .card__bookmark {
@@ -94,24 +92,25 @@ h2 {
   top: -10px;
   right: 11px;
   padding: 0;
-  
+
   width: 0.5%;
   height: 30px;
-  
+
   border-color: black;
   border-style: solid;
   border-width: 10px;
   /* border-bottom-color: green; */
-  border-bottom-color: transparent; 
+  border-bottom-color: transparent;
   border-radius: 5px;
   background-color: transparent;
 }
 
 .card__bookmark:focus {
-  border-color:hotpink;
+  border-color: hotpink;
   border-style: solid;
   border-width: 10px;
   /* border-bottom-color: green; */
-  border-bottom-color: transparent; 
+  border-bottom-color: transparent;
   border-radius: 5px;
-  background-color: transparent;}
+  background-color: transparent;
+}

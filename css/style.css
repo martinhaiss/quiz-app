@@ -1,8 +1,8 @@
-@import "_base.css";
+@import '_base.css';
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@300&display=swap');
-@import "./components/header.css";
-@import "./components/body.css";
-@import "./components/main";
-@import "./components/card.css";
-@import "./components/create.css";
-@import "./components/footer";
+@import './components/header.css';
+@import './components/body.css';
+@import './components/main';
+@import './components/card.css';
+@import './components/create.css';
+@import './components/footer';

@@ -1,43 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
     <header>
       <h1 class="title">CREATE</h1>
     </header>
     <main>
-      <section class="card">
-          <form>
-            <label for="question">
-                Deine Frage: 
-            </label>
-            <textarea class="create__area" id="question" name="question" rows="6" cols="30">Hier kannst du deine Quiz-Frage stellen...</textarea>
-              <label for="answer">
-                  Deine Antwort: 
-              </label>
-            <textarea class="create__area" id="answer" name="answer" rows="6" cols="30">Hier kannst du die Antwort geben...</textarea>
-            <label for="tags">Schlagworte</label>
-            <textarea class="create__area" id="tags" name="tags" rows="3" cols="30">Tags durch Kommas trennen</textarea>
-            <button class="create__button" type="submit">speichern</button>
-          </form>
+      <section class="card__create">
+        <form>
+          <label for="question">Deine Frage</label>
+          <textarea
+            class="create__area"
+            id="question"
+            name="question"
+            rows="4"
+            cols="30"
+          >
+Hier deine Frage stellen</textarea
+          >
+          <label for="answer">Deine Antwort</label>
+          <textarea
+            class="create__area"
+            id="answer"
+            name="answer"
+            rows="4"
+            cols="30"
+          >
+Hier deine Antwort geben</textarea
+          >
+          <label for="tags">Schlagworte</label>
+          <textarea
+            class="create__area"
+            id="tags"
+            name="tags"
+            rows="2"
+            cols="30"
+          >
+Tags durch Kommas trennen</textarea
+          >
+          <button type="submit">speichern</button>
+        </form>
       </section>
     </main>
     <footer>
       <nav>
         <ul>
-          <li class="tags__item_footer1"><a href="index.html"><img src="/img/icons/home.svg"></a></li>
-          <li class="tags__item_footer2"><a href="bookmarks.html"><img src="/img/icons/collections_bookmark_filled.svg
-            "></a></li>
-          <li class="tags__item_footer3"><a href="create.html"><img src="/img/icons/card_add_filled.svg"></a></li>
-          <li class="tags__item_footer4"><a href="account.html"><img src="/img/icons/account.svg"></a></li>
+          <li class="tags__item_footer1">
+            <a href="index.html"><img src="/img/icons/home.svg" /></a>
+          </li>
+          <li class="tags__item_footer2">
+            <a href="bookmarks.html"
+              ><img
+                src="/img/icons/collections_bookmark.svg
+            "
+            /></a>
+          </li>
+          <li class="tags__item_footer3">
+            <a href="create.html"
+              ><img src="/img/icons/card_add_filled.svg"
+            /></a>
+          </li>
+          <li class="tags__item_footer4">
+            <a href="account.html"><img src="/img/icons/account.svg" /></a>
+          </li>
         </ul>
       </nav>
-    </footer> 
-</body>
+    </footer>
+  </body>
 </html>
