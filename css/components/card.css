@@ -1,9 +1,10 @@
 h2 { 
     font-family: 'Roboto', sans-serif;
+    text-align: center !important;
   }
 
 .card {
-      height: auto;
+      height: 450px;
       display: grid;
       grid-template-columns: repeat(6, 1fr);
       grid-template-rows: repeat(6, 1fr);
@@ -18,13 +19,17 @@ h2 {
   }
 
 .card__question {
-  grid-column-start: 2;
+  text-align: justify;
+  grid-column-start: 1;
   grid-column-end: -1;
   grid-row-start: 1;
   grid-row-end: 2;  
+  padding: 10px;
 }
 
 .card__answer {
+  font-size: 1.1rem;
+  position: relative;
   grid-column-start: 2;
   grid-column-end: 6;
   grid-row-start: 3;
@@ -32,6 +37,15 @@ h2 {
 }
 
 .card__button {
+  position: absolute;
+  top: -10px;
+  right: 11px;
+  padding: 10px;
+  border-width: 1px;
+      border-style: solid;
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px;
+      border-radius: 5px;
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 2;
@@ -39,14 +53,36 @@ h2 {
 }
 
 .tags { 
-    padding: 10px;
+  list-style-type: none;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding-left: 10px;
+
+/*
     display: flex;
     justify-content : space-around;
     list-style-type: none;
+    
     grid-column-start: 1;
     grid-column-end: -1;
     grid-row-start: 6;
-    grid-row-end: 6;
+    grid-row-end: -1; */
+}
+
+.tags__item {
+  border: solid;
+  border-color:darkgrey;
+      border-width: 1px;
+      border-style: solid;
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px;
+      border-radius: 5px;  
+  padding-left: 5px;   
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 10px; 
 }
 
 .card__bookmark {
@@ -66,3 +102,12 @@ h2 {
   border-radius: 5px;
   background-color: transparent;
 }
+
+.card__bookmark:focus {
+  border-color:hotpink;
+  border-style: solid;
+  border-width: 10px;
+  /* border-bottom-color: green; */
+  border-bottom-color: transparent; 
+  border-radius: 5px;
+  background-color: transparent;}
