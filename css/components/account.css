@@ -1,4 +1,5 @@
 .account__profile {
+  font-family: roboto;
   background: white;
   color: black;
   border: 1px solid silver;
@@ -9,41 +10,69 @@
 }
 
 .account__image {
-  background: chartreuse;
   align-self: center;
-  width: 50%;
+  width: 40%;
+  margin-top: 10px;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
 }
 .account__name {
-  background: coral;
   align-self: center;
+  margin-bottom: -5px;
 }
 .account__about {
-  background: cyan;
+  margin-left: 10px;
   align-self: flex-start;
 }
 .account__about-title {
-  background: deeppink;
   align-self: flex-start;
+  margin-bottom: 6px;
+  font-size: 1.3rem;
 }
 .account__about_text {
-  background: gold;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  margin-right: 10px;
   align-self: center;
 }
 .account__skills {
-  background: greenyellow;
+  margin-left: 10px;
+  margin-right: 10px;
   align-self: center;
 }
+
 .account__skills_tags {
-  background: turquoise;
-  align-self: space-around;
+  margin-top: -16px;
+  background: coral;
+  display:; 
+}  
+
+.account__skills_tag {
+    font-size: 1.2rem;
+    border: 1px solid black;
+    border-radius: 1px;
+    background: chartreuse; 
+    padding: 3px;
+    
+    justify-self: flex-start;
+    
 }
+
 .account__button {
-    background: tomato;
-  align-self:flex-start;
+  align-self: center;
+  margin-right: 50px;
+  margin-bottom: 10px;
 }
 .account__botton_logout {
-    align-self: flex-end;
+  align-self: flex-start;
+  margin-left: 20px;
+  font-size: 1.3em;
+  padding: 5px 12px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  color: black;
+  border: 1px solid silver;
+  background-image: linear-gradient(to top, gainsboro 0%, white 90%);
+  border-radius: 10px;
 }

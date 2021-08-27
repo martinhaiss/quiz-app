@@ -1,5 +1,12 @@
-.card-create {
-  display:block;
+.card__create {
+  background: white;
+  color: black;
+  border: 1px solid silver;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
 }
 
 label {
@@ -16,24 +23,21 @@ label {
   border-radius: 5px;
 }
 
-.create__area {
-  position: ;
+.create__area_question {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
-  margin-left: 20px;
-  margin-top: 10px;
-  padding: 10px;
-  max-width: 100%;
   line-height: 1.5;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 10px solid #ccc;
 }
 
 textarea {
-  position: ;
+  background: white;
+  padding: 5;
   margin: 20px;
   resize: none;
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
   font-weight: 300;
   color: black;
   border: 1px solid silver;
@@ -41,9 +45,8 @@ textarea {
   border-radius: 10px;
 }
 
-button {
-  margin-left: 30%;
-  margin-top: 5px;
+input {
+  margin-left: 20px;
   font-size: 1.3em;
   padding: 5px 12px;
   font-family: Roboto, sans-serif;
