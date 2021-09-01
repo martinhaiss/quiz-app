@@ -13,7 +13,7 @@
       <h1 class="title">QUIZLR3000</h1>
     </header>
 
-    <main class="main" id="questions">
+    <main class="main main--show" id="main__home">
       <section class="card">
         <button
           class="card__bookmark"
@@ -95,7 +95,7 @@
       </section>
     </main>
 
-    <main class="main main--hidden" id="bookmarks">
+    <main class="main" id="main__bookmarks">
       <section class="card">
         <button
           class="card__bookmark"
@@ -177,7 +177,7 @@
       </section>
     </main>
 
-    <main class="main main--hidden" id="create">
+    <main class="main" id="main__create">
       <section class="card__create">
         <form>
           <br />
@@ -201,7 +201,7 @@ Tags durch Komma trennen
       </section>
     </main>
 
-    <main class="main main--hidden" id="profile">
+    <main class="main" id="main__profile">
       <section class="account__profile">
         <img
           class="account__image"
@@ -232,14 +232,12 @@ Tags durch Komma trennen
       </section>
     </main>
 
-    <footer>
-      <nav class="nav">
-        <button class="nav__link nav__link--active" id="question-button">
-          Home
-        </button>
-        <button class="nav__link" id="bookmark-button">Bookmark</button>
-        <button class="nav__link" id="create-button">Create</button>
-        <button class="nav__link" id="profile-button">Profile</button>
+    <footer class="footer">
+      <nav class="footer__nav">
+        <button class="footer__button active" id="footer__home">Home</button>
+        <button class="footer__button" id="footer__bookmarks">Bookmark</button>
+        <button class="footer__button" id="footer__create">Create</button>
+        <button class="footer__button" id="footer__profile">Profile</button>
 
         <!----- 
         <ul>
