@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
       <h1 class="title">QUIZLR3000</h1>
     </header>
-    <main>
+
+    <main class="main" id="questions">
       <section class="card">
         <button
           class="card__bookmark"
@@ -92,8 +94,154 @@
         </ul>
       </section>
     </main>
+
+    <main class="main main--hidden" id="bookmarks">
+      <section class="card">
+        <button
+          class="card__bookmark"
+          aria-label="Quiz-Frage als Favorit markieren"
+        ></button>
+        <h2 class="card__question">
+          In welchem Jahr wurde das erste Emoji gepostet?
+        </h2>
+        <button class="card__button">Antwort</button>
+        <p class="card__answer card__answer--hidden">
+          Das erste Emoticon wurde 1982 von dem Amerikaner Scott E. Fahlmann in
+          einem elektronischen Forum gepostet.
+        </p>
+        <ul class="tags">
+          <li class="tags__item">Digital</li>
+          <li class="tags__item">Technik</li>
+          <li class="tags__item">Internet</li>
+          <li class="tags__item">Emoji</li>
+        </ul>
+      </section>
+      <section class="card">
+        <button
+          class="card__bookmark"
+          aria-label="Quiz-Frage als Favorit markieren"
+        ></button>
+        <h2 class="card__question">
+          Wofür ist die Inselgruppe Tuvalu im Südpazifik berühmt?
+        </h2>
+        <button class="card__button">Antwort</button>
+        <p class="card__answer card__answer--hidden">
+          Die aus neun Korallen-Atollen bestehende Inselgruppe mit ihren 11.000
+          Einwohnern ist durch ihre Internet-Domain ".tv" berühmt.
+        </p>
+        <ul class="tags">
+          <li class="tags__item">Internet</li>
+          <li class="tags__item">Geografie</li>
+          <li class="tags__item">Pazifik</li>
+          <li class="tags__item">Insel</li>
+        </ul>
+      </section>
+      <section class="card">
+        <button
+          class="card__bookmark"
+          aria-label="Quiz-Frage als Favorit markieren"
+        ></button>
+        <h2 class="card__question">
+          Wie schwer war das erste in Serie produzierte Handy?
+        </h2>
+        <button class="card__button">Antwort</button>
+        <p class="card__answer card__answer--hidden">
+          Das erste Serienhandy der Welt, das Motorola Dynatac (auch "Knochen"
+          genannt), wog 800 Gramm. So viel wie acht Tafeln Schokolade.
+        </p>
+        <ul class="tags">
+          <li class="tags__item">Technik</li>
+          <li class="tags__item">Digital</li>
+          <li class="tags__item">Handy</li>
+          <li class="tags__item">Gewicht</li>
+        </ul>
+      </section>
+      <section class="card">
+        <button
+          class="card__bookmark"
+          aria-label="Quiz-Frage als Favorit markieren"
+        ></button>
+        <h2 class="card__question">Woher kommt der Name "Frisbee"?</h2>
+        <button class="card__button">Antwort</button>
+        <p class="card__answer card__answer--hidden">
+          Der Name geht auf die Bäckerei "Frisbie" in Conneticut zurück. Deren
+          kreisrunde Backformen aus Zinn waren die Vorläufer der fliegenden
+          Plastikscheiben.
+        </p>
+        <ul class="tags">
+          <li class="tags__item">Sport</li>
+          <li class="tags__item">Freizeit</li>
+          <li class="tags__item">Name</li>
+          <li class="tags__item">Geschichte</li>
+        </ul>
+      </section>
+    </main>
+
+    <main class="main main--hidden" id="create">
+      <section class="card__create">
+        <form>
+          <br />
+          <label for="question">Deine Frage</label><br />
+          <textarea id="question" name="question" rows="3" cols="32">
+Hier deine Frage stellen
+          </textarea>
+          <br />
+          <label for="answer">Deine Antwort</label><br />
+          <textarea id="answer" name="answer" rows="3" cols="32">
+Hier deine Antwort geben
+          </textarea>
+          <br />
+          <label for="tags">Schlagworte</label><br />
+          <textarea id="tags" name="tags" rows="3" cols="32">
+Tags durch Komma trennen
+          </textarea>
+          <br />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+
+    <main class="main main--hidden" id="profile">
+      <section class="account__profile">
+        <img
+          class="account__image"
+          src="/img/account/drkatze.jpeg"
+          alt="Profilbild"
+        />
+
+        <h2 class="account__name">Doktor Katze</h2>
+        <div class="account__about">
+          <h3 class="account__about-title">Über mich</h3>
+        </div>
+        <article class="account__about_text">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque...
+        </article>
+        <div>
+          <h3 class="account__skills">Skills</h3>
+          <ul class="account__skills_tags">
+            <li class="account__skills_tag">HTML</li>
+            <li class="account__skills_tag">CSS</li>
+            <li class="account__skills_tag">Java</li>
+            <li class="account__skills_tag">PHP</li>
+          </ul>
+        </div>
+        <div class="account__button">
+          <button class="account__botton_logout">abmelden</button>
+        </div>
+      </section>
+    </main>
+
     <footer>
-      <nav>
+      <nav class="nav">
+        <button class="nav__link nav__link--active" id="question-button">
+          Home
+        </button>
+        <button class="nav__link" id="bookmark-button">Bookmark</button>
+        <button class="nav__link" id="create-button">Create</button>
+        <button class="nav__link" id="profile-button">Profile</button>
+
+        <!----- 
         <ul>
           <li class="tags__item_footer1">
             <a href="index.html"><img src="/img/icons/home_filled.svg" /></a>
@@ -111,7 +259,7 @@
           <li class="tags__item_footer4">
             <a href="account.html"><img src="/img/icons/account.svg" /></a>
           </li>
-        </ul>
+        </ul> -->
       </nav>
     </footer>
   </body>
