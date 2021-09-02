@@ -8,5 +8,5 @@ main {
 }
 
 .main.main--show {
-  display: block;
+  display: grid;
 }
