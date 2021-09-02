@@ -1,8 +1,4 @@
-/* 
-   
-   Navigation-Start 
-   
-   */
+// navigation start
 
 const mainHome = document.querySelector('#main__home')
 const mainBookmarks = document.querySelector('#main__bookmarks')
@@ -61,9 +57,3 @@ buttonProfile.addEventListener('click', () => {
   buttonCreate.classList.remove('active')
   buttonProfile.classList.add('active')
 })
-
-/* 
-   
-   Navigation-Ende 
-   
-   */

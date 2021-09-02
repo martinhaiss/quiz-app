@@ -12,7 +12,7 @@ h2 {
   grid-template-rows: repeat(6, 1fr);
   position: relative;
   background-color: white;
-  border-color: darkgrey;                                                
+  border-color: darkgrey;
   border-width: 1px;
   border-style: solid;
   border-bottom-left-radius: 2px;
@@ -36,6 +36,8 @@ h2 {
   grid-column-end: 6;
   grid-row-start: 3;
   grid-row-end: -1;
+  /* added to hide answer */
+  display: none;
 }
 
 .card__button {
@@ -60,16 +62,6 @@ h2 {
   bottom: 10px;
   left: 10px;
   padding-left: 10px;
-
-  /*
-    display: flex;
-    justify-content : space-around;
-    list-style-type: none;
-    
-    grid-column-start: 1;
-    grid-column-end: -1;
-    grid-row-start: 6;
-    grid-row-end: -1; */
 }
 
 .tags__item {
@@ -113,4 +105,7 @@ h2 {
   border-bottom-color: transparent;
   border-radius: 5px;
   background-color: transparent;
+}
+.card__answer.card__answer--show {
+  display: grid;
 }
