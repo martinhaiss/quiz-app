@@ -27,3 +27,33 @@ const Answer4 = document.querySelector('#card__answer4')
 buttonAnswer4.addEventListener('click', () => {
   Answer4.classList.toggle('card__answer--show')
 })
+
+// answer-buttons main-bookmarks
+
+const buttonAnswer5 = document.querySelector('#card__button5')
+const Answer5 = document.querySelector('#card__answer5')
+
+buttonAnswer5.addEventListener('click', () => {
+  Answer5.classList.toggle('card__answer--show')
+})
+
+const buttonAnswer6 = document.querySelector('#card__button6')
+const Answer6 = document.querySelector('#card__answer6')
+
+buttonAnswer6.addEventListener('click', () => {
+  Answer6.classList.toggle('card__answer--show')
+})
+
+const buttonAnswer7 = document.querySelector('#card__button7')
+const Answer7 = document.querySelector('#card__answer7')
+
+buttonAnswer7.addEventListener('click', () => {
+  Answer7.classList.toggle('card__answer--show')
+})
+
+const buttonAnswer8 = document.querySelector('#card__button8')
+const Answer8 = document.querySelector('#card__answer4')
+
+buttonAnswer8.addEventListener('click', () => {
+  Answer8.classList.toggle('card__answer--show')
+})
