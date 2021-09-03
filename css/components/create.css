@@ -22,9 +22,6 @@ label {
   font-family: Roboto, sans-serif;
   font-weight: 300;
   color: black;
-  border: 1px solid silver;
-  background-image: linear-gradient(to top, gainsboro 0%, white 90%);
-  border-radius: 5px;
   align-self: center;
 }
 
