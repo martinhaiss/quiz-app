@@ -1,9 +1,6 @@
 body {
-  max-width: 500px;
-  background-color: ghostwhite;
+  max-width: 450px;
   margin: auto;
-  padding: 10px;
-
   display: grid;
   grid-template-rows: 100px auto 75px;
   height: 100vh;
