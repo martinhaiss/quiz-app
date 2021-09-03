@@ -9,12 +9,11 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-start;
 }
 
 label {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin-left: 30px;
   margin-top: 20px;
   font-size: 1.3em;
