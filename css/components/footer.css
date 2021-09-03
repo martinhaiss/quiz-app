@@ -1,16 +1,13 @@
 footer {
   background-color: whitesmoke;
 }
-ul {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-li {
-  float: left;
-}
 
 nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+
+.footer__button {
+  border-radius: 5px;
+  border-color: silver;
 }
