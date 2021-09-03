@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="/css/style.css" />
-    <script src="script.js" defer></script>
+    <script src="main.js" defer></script>
     <script src="show-hide-answer.js" defer></script>
+    <script src="card-bookmark.js" defer></script>
   </head>
   <body>
     <header>
@@ -17,7 +18,8 @@
     <main class="main main--show" id="main__home">
       <section class="card">
         <button
-          class="card__bookmark"
+          id="card__favBookmark"
+          class="card__bookmark card__bookmark--active"
           aria-label="Quiz-Frage als Favorit markieren"
         ></button>
         <h2 class="card__question">
@@ -37,7 +39,8 @@
       </section>
       <section class="card">
         <button
-          class="card__bookmark"
+          id="card__favBookmark"
+          class="card__bookmark card__bookmark--active"
           aria-label="Quiz-Frage als Favorit markieren"
         ></button>
         <h2 class="card__question">
@@ -57,7 +60,8 @@
       </section>
       <section class="card">
         <button
-          class="card__bookmark"
+          id="card__favBookmark"
+          class="card__bookmark card__bookmark--active"
           aria-label="Quiz-Frage als Favorit markieren"
         ></button>
         <h2 class="card__question">
@@ -77,7 +81,8 @@
       </section>
       <section class="card">
         <button
-          class="card__bookmark"
+          id="card__favBookmark"
+          class="card__bookmark card__bookmark--active"
           aria-label="Quiz-Frage als Favorit markieren"
         ></button>
         <h2 class="card__question">Woher kommt der Name "Frisbee"?</h2>
@@ -99,7 +104,8 @@
     <main class="main" id="main__bookmarks">
       <section class="card">
         <button
-          class="card__bookmark"
+          id="card__favBookmark"
+          class="card__bookmark card__bookmark--active"
           aria-label="Quiz-Frage als Favorit markieren"
         ></button>
         <h2 class="card__question">
@@ -119,7 +125,8 @@
       </section>
       <section class="card">
         <button
-          class="card__bookmark"
+          id="card__favBookmark"
+          class="card__bookmark card__bookmark--active"
           aria-label="Quiz-Frage als Favorit markieren"
         ></button>
         <h2 class="card__question">
@@ -139,7 +146,8 @@
       </section>
       <section class="card">
         <button
-          class="card__bookmark"
+          id="card__favBookmark"
+          class="card__bookmark card__bookmark--active"
           aria-label="Quiz-Frage als Favorit markieren"
         ></button>
         <h2 class="card__question">
@@ -159,7 +167,8 @@
       </section>
       <section class="card">
         <button
-          class="card__bookmark"
+          id="card__favBookmark"
+          class="card__bookmark card__bookmark--active"
           aria-label="Quiz-Frage als Favorit markieren"
         ></button>
         <h2 class="card__question">Woher kommt der Name "Frisbee"?</h2>
