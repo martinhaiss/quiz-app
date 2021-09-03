@@ -9,6 +9,7 @@
     <script src="main.js" defer></script>
     <script src="show-hide-answer.js" defer></script>
     <script src="card-bookmark.js" defer></script>
+    <script src="create.js" defer></script>
   </head>
   <body>
     <header>
@@ -189,24 +190,25 @@
 
     <main class="main" id="main__create">
       <section class="card__create">
-        <form>
-          <br />
+        <form id="create__newcard">
           <label for="question">Deine Frage</label><br />
-          <textarea id="question" name="question" rows="3" cols="32">
-Hier deine Frage stellen
-          </textarea>
-          <br />
+          <input type="text" id="question" name="question" /><br />
           <label for="answer">Deine Antwort</label><br />
-          <textarea id="answer" name="answer" rows="3" cols="32">
-Hier deine Antwort geben
-          </textarea>
-          <br />
-          <label for="tags">Schlagworte</label><br />
-          <textarea id="tags" name="tags" rows="3" cols="32">
-Tags durch Komma trennen
-          </textarea>
-          <br />
-          <input type="submit" value="Submit" />
+          <textarea
+            id="answer"
+            name="answer"
+            rows="3"
+            cols="32"
+            placeholder="Hier deine Antwort geben"
+          ></textarea>
+          <label for="tags">Tags durch Komma trennen</label><br />
+          <input type="text" id="tags" name="tags" /><br />
+          <input
+            type="button"
+            onclick="reset()"
+            class="submit"
+            value="submit"
+          />
         </form>
       </section>
     </main>

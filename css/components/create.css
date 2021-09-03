@@ -4,15 +4,14 @@
   border: 1px solid silver;
   border-radius: 10px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-direction: column;
   align-items: flex-start;
 }
 
 label {
   font-family: 'Roboto', sans-serif;
   font-size: 1.3rem;
-  margin-left: 20px;
+  margin-left: 30px;
   font-size: 1.3em;
   padding: 5px 12px;
   font-family: Roboto, sans-serif;
@@ -34,7 +33,7 @@ label {
 textarea {
   background: white;
   padding: 5;
-  margin: 20px;
+  margin: 40px;
   resize: none;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
@@ -46,13 +45,12 @@ textarea {
 }
 
 input {
-  margin-left: 20px;
+  margin-left: 40px;
   font-size: 1.3em;
   padding: 5px 12px;
   font-family: Roboto, sans-serif;
   font-weight: 300;
   color: black;
   border: 1px solid silver;
-  background-image: linear-gradient(to top, gainsboro 0%, white 90%);
   border-radius: 10px;
 }
