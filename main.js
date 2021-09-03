@@ -1,14 +1,21 @@
 // navigation start
 
-const mainHome = document.querySelector('#main__home')
-const mainBookmarks = document.querySelector('#main__bookmarks')
-const mainCreate = document.querySelector('#main__create')
-const mainProfile = document.querySelector('#main__profile')
+const mainHome = getEl('#main__home')
+const mainBookmarks = getEl('#main__bookmarks')
+const mainCreate = getEl('#main__create')
+const mainProfile = getEl('#main__profile')
 
-const buttonHome = document.querySelector('#footer__home')
-const buttonBookmarks = document.querySelector('#footer__bookmarks')
-const buttonCreate = document.querySelector('#footer__create')
-const buttonProfile = document.querySelector('#footer__profile')
+const buttonHome = getEl('#footer__home')
+const buttonBookmarks = getEl('#footer__bookmarks')
+const buttonCreate = getEl('#footer__create')
+const buttonProfile = getEl('#footer__profile')
+
+function getEl(selector) {
+  const el = document.querySelector(selector)
+  return el
+}
+
+// Events
 
 buttonHome.addEventListener('click', () => {
   mainHome.classList.add('main--show')
