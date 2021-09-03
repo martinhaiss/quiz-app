@@ -96,16 +96,6 @@ h2 {
   border-radius: 5px;
   background-color: transparent;
 }
-/*
-.card__bookmark:focus {
-  border-color: hotpink;
-  border-style: solid;
-  border-width: 10px;
-  /* border-bottom-color: green; */
-/* border-bottom-color: transparent;
-  border-radius: 5px;
-  background-color: transparent;
-}*/
 
 .card__bookmark--active {
   border-color: black;
