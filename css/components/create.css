@@ -1,17 +1,22 @@
 .card__create {
   background: white;
+}
+
+.create__form {
+  background: white;
   color: black;
-  border: 1px solid silver;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 label {
   font-family: 'Roboto', sans-serif;
   font-size: 1.3rem;
   margin-left: 30px;
+  margin-top: 20px;
   font-size: 1.3em;
   padding: 5px 12px;
   font-family: Roboto, sans-serif;
@@ -20,6 +25,7 @@ label {
   border: 1px solid silver;
   background-image: linear-gradient(to top, gainsboro 0%, white 90%);
   border-radius: 5px;
+  align-self: center;
 }
 
 .create__area_question {
@@ -28,12 +34,13 @@ label {
   line-height: 1.5;
   border-radius: 5px;
   border: 10px solid #ccc;
+  align-self: center;
 }
 
 textarea {
   background: white;
   padding: 5;
-  margin: 40px;
+  margin-left: 30px;
   resize: none;
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
@@ -42,10 +49,11 @@ textarea {
   border: 1px solid silver;
   background-image: linear-gradient(to top, white 90%);
   border-radius: 10px;
+  align-self: center;
 }
 
 input {
-  margin-left: 40px;
+  margin-left: 30px;
   font-size: 1.3em;
   padding: 5px 12px;
   font-family: Roboto, sans-serif;
@@ -53,4 +61,5 @@ input {
   color: black;
   border: 1px solid silver;
   border-radius: 10px;
+  align-self: center;
 }
