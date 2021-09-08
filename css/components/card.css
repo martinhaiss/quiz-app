@@ -88,7 +88,7 @@ h2 {
   width: 0.5%;
   height: 30px;
 
-  border-color: hotpink;
+  border-color: black;
   border-style: solid;
   border-width: 10px;
   /* border-bottom-color: green; */
@@ -98,7 +98,7 @@ h2 {
 }
 
 .card__bookmark--active {
-  border-color: black;
+  border-color: #d661ff;
   border-style: solid;
   border-width: 10px;
   /* border-bottom-color: green; */

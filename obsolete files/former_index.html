@@ -7,6 +7,7 @@
     <title>Quiz App</title>
     <link rel="stylesheet" href="/css/style.css" />
     <script src="main.js" defer></script>
+    <script src="show-hide-answer.js" defer></script>
     <script src="card-bookmark.js" defer></script>
     <script src="create.js" defer></script>
   </head>
@@ -15,7 +16,91 @@
       <h1 class="title">QUIZLR3000</h1>
     </header>
 
-    <main class="main main--show" id="main__home"></main>
+    <main class="main main--show" id="main__home">
+      <section id="card" class="card">
+        <button
+          id="card__favBookmark"
+          class="card__bookmark card__bookmark--active"
+          aria-label="Quiz-Frage als Favorit markieren"
+        ></button>
+        <h2 class="card__question">
+          In welchem Jahr wurde das erste Emoji gepostet?
+        </h2>
+        <button id="card__button1" class="card__button">Antwort</button>
+        <p id="card__answer1" class="card__answer card__answer--hidden">
+          Das erste Emoticon wurde 1982 von dem Amerikaner Scott E. Fahlmann in
+          einem elektronischen Forum gepostet.
+        </p>
+        <ul class="tags">
+          <li class="tags__item">Digital</li>
+          <li class="tags__item">Technik</li>
+          <li class="tags__item">Internet</li>
+          <li class="tags__item">Emoji</li>
+        </ul>
+      </section>
+      <section class="card">
+        <button
+          id="card__favBookmark"
+          class="card__bookmark card__bookmark--active"
+          aria-label="Quiz-Frage als Favorit markieren"
+        ></button>
+        <h2 class="card__question">
+          Wofür ist die Inselgruppe Tuvalu im Südpazifik berühmt?
+        </h2>
+        <button id="card__button2" class="card__button">Antwort</button>
+        <p id="card__answer2" class="card__answer">
+          Die aus neun Korallen-Atollen bestehende Inselgruppe mit ihren 11.000
+          Einwohnern ist durch ihre Internet-Domain ".tv" berühmt.
+        </p>
+        <ul class="tags">
+          <li class="tags__item">Internet</li>
+          <li class="tags__item">Geografie</li>
+          <li class="tags__item">Pazifik</li>
+          <li class="tags__item">Insel</li>
+        </ul>
+      </section>
+      <section class="card">
+        <button
+          id="card__favBookmark"
+          class="card__bookmark card__bookmark--active"
+          aria-label="Quiz-Frage als Favorit markieren"
+        ></button>
+        <h2 class="card__question">
+          Wie schwer war das erste in Serie produzierte Handy?
+        </h2>
+        <button id="card__button3" class="card__button">Antwort</button>
+        <p id="card__answer3" class="card__answer">
+          Das erste Serienhandy der Welt, das Motorola Dynatac (auch "Knochen"
+          genannt), wog 800 Gramm. So viel wie acht Tafeln Schokolade.
+        </p>
+        <ul class="tags">
+          <li class="tags__item">Technik</li>
+          <li class="tags__item">Digital</li>
+          <li class="tags__item">Handy</li>
+          <li class="tags__item">Gewicht</li>
+        </ul>
+      </section>
+      <section class="card">
+        <button
+          id="card__favBookmark"
+          class="card__bookmark card__bookmark--active"
+          aria-label="Quiz-Frage als Favorit markieren"
+        ></button>
+        <h2 class="card__question">Woher kommt der Name "Frisbee"?</h2>
+        <button id="card__button4" class="card__button">Antwort</button>
+        <p id="card__answer4" class="card__answer">
+          Der Name geht auf die Bäckerei "Frisbie" in Conneticut zurück. Deren
+          kreisrunde Backformen aus Zinn waren die Vorläufer der fliegenden
+          Plastikscheiben.
+        </p>
+        <ul class="tags">
+          <li class="tags__item">Sport</li>
+          <li class="tags__item">Freizeit</li>
+          <li class="tags__item">Name</li>
+          <li class="tags__item">Geschichte</li>
+        </ul>
+      </section>
+    </main>
 
     <main class="main" id="main__bookmarks">
       <section class="card">
@@ -28,7 +113,7 @@
           In welchem Jahr wurde das erste Emoji gepostet?
         </h2>
         <button id="card__button5" class="card__button">Antwort</button>
-        <p id="card__answer5" class="card__answer card__answer--hidden">
+        <p id="card__answer5" class="card__answer">
           Das erste Emoticon wurde 1982 von dem Amerikaner Scott E. Fahlmann in
           einem elektronischen Forum gepostet.
         </p>
@@ -49,7 +134,7 @@
           Wofür ist die Inselgruppe Tuvalu im Südpazifik berühmt?
         </h2>
         <button id="card__button6" class="card__button">Antwort</button>
-        <p id="card__answer6" class="card__answer card__answer--hidden">
+        <p id="card__answer6" class="card__answer">
           Die aus neun Korallen-Atollen bestehende Inselgruppe mit ihren 11.000
           Einwohnern ist durch ihre Internet-Domain ".tv" berühmt.
         </p>
@@ -70,7 +155,7 @@
           Wie schwer war das erste in Serie produzierte Handy?
         </h2>
         <button id="card__button7" class="card__button">Antwort</button>
-        <p id="card__answer7" class="card__answer card__answer--hidden">
+        <p id="card__answer7" class="card__answer">
           Das erste Serienhandy der Welt, das Motorola Dynatac (auch "Knochen"
           genannt), wog 800 Gramm. So viel wie acht Tafeln Schokolade.
         </p>
@@ -89,7 +174,7 @@
         ></button>
         <h2 class="card__question">Woher kommt der Name "Frisbee"?</h2>
         <button id="card__button8" class="card__button">Antwort</button>
-        <p id="card__answer8" class="card__answer card__answer--hidden">
+        <p id="card__answer8" class="card__answer">
           Der Name geht auf die Bäckerei "Frisbie" in Conneticut zurück. Deren
           kreisrunde Backformen aus Zinn waren die Vorläufer der fliegenden
           Plastikscheiben.
