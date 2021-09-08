@@ -19,7 +19,7 @@ function getEl(selector) {
   return el
 }
 
-// Card data of my 4 quiz-cards
+// Card data of the 4 cards
 
 const cardData = [
   {
@@ -56,8 +56,6 @@ const cardData = [
   },
 ]
 
-// Rewrite of the HTML to use createElement() and appendChild()
-
 function renderCard(cardData) {
   const cardSection = document.createElement('section')
   cardSection.classList.add('card')
@@ -75,13 +73,12 @@ function renderCard(cardData) {
 
   const cardButton = document.createElement('button')
   cardButton.classList.add('card__button')
-  cardButton.classList.add('card__button--hide')
-  cardButton.textContent = 'Antwort zeigen'
+  cardButton.textContent = 'Show answer'
   cardSection.appendChild(cardButton)
 
   const cardAnswer = document.createElement('p')
   cardAnswer.classList.add('card__answer')
-  cardAnswer.classList.add('card__answer--hide')
+  cardAnswer.classList.add('card__answer--hidden')
   cardAnswer.textContent = cardData.answer
   cardSection.appendChild(cardAnswer)
 
@@ -100,27 +97,6 @@ function renderCard(cardData) {
 cardData.forEach(element => {
   renderCard(element)
 })
-
-// show & hide answers
-
-function getElAll(selector) {
-  const el = document.querySelectorAll(selector)
-  return el
-}
-
-const answerButtons = getElAll('.card__button')
-
-for (let i = 0; i < answerButtons.length; i++) {
-  answerButtons[i].addEventListener('click', () => {
-    answerButtons[i].nextElementSibling.classList.toggle('card__answer--show')
-    answerButtons[i].classList.toggle('card__button--hide')
-    if (answerButtons[i].innerText === 'ausblenden') {
-      answerButtons[i].innerText = 'Antwort zeigen'
-    } else {
-      answerButtons[i].innerText = 'ausblenden'
-    }
-  })
-}
 
 // Events
 
