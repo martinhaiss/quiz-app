@@ -1,5 +1,3 @@
-// navigation start
-
 // main
 
 const mainHome = getEl('#main__home')
@@ -19,14 +17,14 @@ function getEl(selector) {
   return el
 }
 
-// Card data of my 4 quiz-cards
+// ---------------------  Array with data of quiz-cards ----------------------
 
 const cardData = [
   {
     question: 'In welchem Jahr wurde das erste Emoji gepostet?',
     answer:
       'Das erste Emoticon wurde 1982 von dem Amerikaner Scott E. Fahlmann in einem elektronischen Forum gepostet.',
-    isBookmarked: true,
+    isBookmarked: false,
     showAnswer: false,
     tags: ['Digital', 'Technik', 'Internet', 'Emoji'],
   },
@@ -34,15 +32,15 @@ const cardData = [
     question: 'Wofür ist die Inselgruppe Tuvalu im Südpazifik berühmt?',
     answer:
       'Die aus neun Korallen-Atollen bestehende Inselgruppe mit ihren 11.000 Einwohnern ist durch ihre Internet-Domain ".tv" berühmt.',
-    isBookmarked: true,
+    isBookmarked: false,
     showAnswer: false,
     tags: ['Internet', 'Geografie', 'Pazifik', 'Insel'],
   },
   {
-    question: 'In welchem Jahr wurde das erste Emoji gepostet?',
+    question: 'Wie schwer war das erste in Serie produzierte Handy?',
     answer:
       'Das erste Serienhandy der Welt, das Motorola Dynatac wog 800 Gramm. So viel wie acht Tafeln Schokolade.',
-    isBookmarked: true,
+    isBookmarked: false,
     showAnswer: false,
     tags: ['Digital', 'Technik', 'Handy'],
   },
@@ -50,18 +48,18 @@ const cardData = [
     question: 'Woher kommt der Name "Frisbee"?',
     answer:
       'Der Name geht auf die Bäckerei "Frisbie" in Conneticut zurück. Deren kreisrunde Backformen aus Zinn waren die Vorläufer der fliegenden Plastikscheiben.',
-    isBookmarked: true,
+    isBookmarked: false,
     showAnswer: false,
     tags: ['Sport', 'Freizeit', 'Geschichte'],
   },
 ]
 
-// Rewrite of the HTML to use createElement() and appendChild()
+// --------- Rewrite of the HTML to use createElement() and appendChild() -----------
 
-function renderCard(cardData) {
+function renderCard(cardData, targetElement) {
   const cardSection = document.createElement('section')
   cardSection.classList.add('card')
-  mainHome.appendChild(cardSection)
+  targetElement.appendChild(cardSection)
 
   const cardBookmark = document.createElement('button')
   cardBookmark.classList.add('card__bookmark')
@@ -97,11 +95,14 @@ function renderCard(cardData) {
   })
 }
 
-cardData.forEach(element => {
-  renderCard(element)
+cardData.forEach(getEl => {
+  renderCard(getEl, mainHome)
+})
+cardData.forEach(getEl => {
+  renderCard(getEl, mainBookmarks)
 })
 
-// show & hide answers
+// --------------- show & hide answers ------------------
 
 function getElAll(selector) {
   const el = document.querySelectorAll(selector)
@@ -122,7 +123,7 @@ for (let i = 0; i < answerButtons.length; i++) {
   })
 }
 
-// Events
+// ------------  Events -----------------------
 
 buttonHome.addEventListener('click', () => {
   mainHome.classList.add('main--show')
